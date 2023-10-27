@@ -1,0 +1,72 @@
+:root {
+  --ff-primary: "Libre Franklin", sans-serif;
+
+  --crl-blue: hsl(223, 87%, 63%);
+  --crl-pale-blue: hsl(223, 100%, 88%);
+  --crl-red: hsl(354, 100%, 66%);
+  --crl-gray: hsl(0, 0%, 59%);
+  --crl-dark: hsl(209, 33%, 12%);
+
+  --fw-light: 300;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 62.5%;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2 {
+  overflow-wrap: break-word;
+}
+
+.section-hero {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  width: 600px;
+}
+
+.img-logo {
+}
+
+.heading-primary {
+  font-size: 3rem;
+  color: var(--crl-gray);
+  font-weight: var(--fw-light);
+}
+
+.heading-primary span {
+  font-weight: var(--fw-bold);
+  color: var(--crl-dark);
+}

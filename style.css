@@ -23,9 +23,12 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: var(--ff-primary);
-  font-size: 62.5%;
   line-height: 1.5;
   min-height: 100vh;
   display: grid;
@@ -53,15 +56,18 @@ h2 {
 .section-hero {
   display: grid;
   place-items: center;
-  gap: 1rem;
+  gap: 3rem;
   width: 600px;
+  height: 100%;
 }
 
-.img-logo {
+.heading {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 1rem;
 }
-
 .heading-primary {
-  font-size: 3rem;
+  font-size: 4.4rem;
   color: var(--crl-gray);
   font-weight: var(--fw-light);
 }
@@ -69,4 +75,58 @@ h2 {
 .heading-primary span {
   font-weight: var(--fw-bold);
   color: var(--crl-dark);
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: var(--crl-dark);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 100%;
+}
+
+input {
+  width: 75%;
+  border: 1px solid var(--crl-pale-blue);
+  border-radius: 100vw;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+}
+
+input::placeholder {
+  color: var(--crl-pale-blue);
+}
+
+.btn {
+  border: none;
+  background-color: var(--crl-blue);
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 100vw;
+  padding: 0.8rem 3.2rem;
+  font-weight: var(--fw-semi-bold);
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  width: 15px;
+  height: 15px;
+  color: var(--crl-blue);
+  border: 1px solid var(--crl-pale-blue);
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+.copyright {
+  color: var(--crl-gray);
+  font-size: 1rem;
 }
